@@ -22,7 +22,7 @@
       </button>
       <div id="codeView-markdown2" style="text-align:center;" class="show-list-numbers-and-dots">
         <p style="color:#3B3A3A;">
-          This code will change in 60 seconds:
+          This code will change in {{ticks}} seconds:
         </p>
       </div>
       <div *ngIf = "!codeVisible">
@@ -32,7 +32,7 @@
       </div>
       <div *ngIf = "codeVisible">
         <h2 id="codeView-heading1" style="color:#000000;text-align:center;">
-          2524-3624-2525
+          {{code1}}-{{code2}}-{{code3}}
         </h2>
       </div>
       <div id="codeView-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
