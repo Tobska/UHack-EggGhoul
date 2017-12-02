@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { AccountsPage } from '../accounts/accounts';
+import { AccountDetailPage } from '../account-detail/account-detail';
 
 
 
@@ -25,7 +26,7 @@ export class AccountPage {
   ];
 
   itemSelected(item: string) {
-    console.log("Selected Item", item);
+    this.navCtrl.push(AccountDetailPage);
   }
 
 }
