@@ -17,7 +17,7 @@
         </ion-label>
         <ion-input type="number" placeholder=""></ion-input>
       </ion-item>
-      <button id="codeView-button6" ion-button color="positive" block>
+      <button id="codeView-button6" ion-button color="positive" block on-click="generateCode()">
         Generate Code
       </button>
       <div id="codeView-markdown2" style="text-align:center;" class="show-list-numbers-and-dots">
@@ -34,5 +34,8 @@
         </p>
       </div>
     </form>
+    <button block ion-button color="secondary" on-click="finishTransaction()">
+      Finish
+    </button>
   </div>
 </ion-content>

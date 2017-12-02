@@ -15,7 +15,7 @@ import { WithdrawPage } from '../pages/withdraw/withdraw';
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = LoginPage;
+    rootPage:any = AccountPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -29,6 +29,12 @@ export class MyApp {
     if (!params) params = {};
     this.navCtrl.setRoot(AccountPage);
   }goToWithdrawDeposit(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(WithdrawDepositPage);
+  }goToTransactions(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(WithdrawDepositPage);
+  }goToTransactionHistory(params){
     if (!params) params = {};
     this.navCtrl.setRoot(WithdrawDepositPage);
   }

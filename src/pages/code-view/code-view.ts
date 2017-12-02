@@ -9,5 +9,13 @@ export class CodeViewPage {
 
   constructor(public navCtrl: NavController) {
   }
-  
+
+  generateCode(){
+    console.log("heh");
+  }
+
+  finishTransaction(){
+    this.navCtrl.popToRoot();
+  }
+
 }
