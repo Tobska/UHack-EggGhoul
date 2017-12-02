@@ -29,6 +29,10 @@ export class TransactionComponent {
     this.title = 'Hello World';*/
   }
 
+  itemSelected(){
+    console.log("Welcome to your life.")
+  }
+
   ngAfterViewInit() {
     console.log(this.amount);
 
