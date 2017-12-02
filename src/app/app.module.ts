@@ -5,6 +5,8 @@ import { MyApp } from './app.component';
 import { WithdrawDepositPage } from '../pages/withdraw-deposit/withdraw-deposit';
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
+import { WithdrawPage } from '../pages/withdraw/withdraw';
+import { DepositPage } from '../pages/desposit/deposit';
 import { CodeViewPage } from '../pages/code-view/code-view';
 
 
@@ -17,7 +19,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WithdrawDepositPage,
     AccountPage,
     LoginPage,
-    CodeViewPage
+    CodeViewPage,
+    WithdrawPage,
+    DepositPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WithdrawDepositPage,
     AccountPage,
     LoginPage,
-    CodeViewPage
+    CodeViewPage,
+    WithdrawPage,
+    DepositPage
   ],
   providers: [
     StatusBar,

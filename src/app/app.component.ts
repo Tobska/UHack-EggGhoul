@@ -5,8 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
-
 import { WithdrawDepositPage } from '../pages/withdraw-deposit/withdraw-deposit';
+import { WithdrawPage } from '../pages/withdraw/withdraw';
 
 
 
