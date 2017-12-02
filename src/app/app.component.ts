@@ -9,7 +9,7 @@ import { WithdrawDepositPage } from '../pages/withdraw-deposit/withdraw-deposit'
 import { WithdrawPage } from '../pages/withdraw/withdraw';
 import { TransactionsPage } from '../pages/transactions/transactions';
 import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
-
+import { AccountsPage } from '../pages/accounts/accounts'
 
 @Component({
   templateUrl: 'app.html'

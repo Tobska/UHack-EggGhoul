@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { PinVerificationPage } from '../pin-verification/pin-verification';
+import { AccountsPage } from '../accounts/accounts';
+
 
 
 @Component({
@@ -13,8 +14,8 @@ export class AccountPage {
   constructor(public navCtrl: NavController) {
   }
 
-  goToPinVerification(){
-    this.navCtrl.push(PinVerificationPage);
+  goToAccounts(){
+    this.navCtrl.push(AccountsPage);
   }
 
 }

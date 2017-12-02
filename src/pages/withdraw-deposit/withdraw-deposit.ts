@@ -2,7 +2,7 @@ import { Component,ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 
-import { PinVerificationPage } from '../pin-verification/pin-verification'
+import { AccountsPage } from '../accounts/accounts';
 
 @Component({
   selector: 'page-withdraw-deposit',
@@ -15,9 +15,11 @@ export class WithdrawDepositPage {
 
   }
 
-  goToPinVerification(){
-    this.navCtrl.push(PinVerificationPage);
+  goToAccounts(){
+    this.navCtrl.push(AccountsPage);
   }
+
+
 
 
 }
