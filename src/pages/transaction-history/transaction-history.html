@@ -10,6 +10,10 @@
 </ion-header>
 <ion-content padding id="transaction-history">
   <div id="trans-h-container1">
-
+    <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ item }}
+      </button>
+    </ion-list>
   </div>
 </ion-content>
