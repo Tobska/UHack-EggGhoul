@@ -17,12 +17,14 @@ export class TransactionComponent {
   @Input('currency') inputCurrency;
   @Input('amount') inputAmount;
   @Input('classification') inputClass;
+  @Input('code') inputCode;
 
   time: string;
   currency: string;
   date: string;
   amount = 0;
   classification:string;
+  code = 0;
 
   constructor() {
     /*console.log('Hello TransactionComponent Component');
@@ -41,6 +43,7 @@ export class TransactionComponent {
     this.date = this.inputDate;
     this.amount = this.inputAmount;
     this.classification = this.inputClass;
+    this.code = this.inputCode;
   }
 
 }

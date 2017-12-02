@@ -8,17 +8,27 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
+
 <ion-content padding id="page2">
   <div id="account-d-container1" text-center >
     <h6>X Account</h6>
     <h4>Available Balance</h4>
     <h3>PHP 0.00</h3>
   </div>
+  <div id = "recent-transaction-list">
   <h4>Recent Transactions</h4>
 
-  <ion-list float-left class="recent-transaction-list">
+  <transaction classification = "withdraw" currency = "PHP" amount = 300 date = "July 18, 2017" time = "8:20 PM"></transaction>
+  <transaction classification = "deposit" currency = "PHP" amount = 500 date = "July 16, 2017" time = "7:58 AM"></transaction>
+  <transaction classification = "deposit" currency = "PHP" amount = 250 date = "July 13, 2017" time = "10:04 AM"></transaction>
+  <transaction classification = "deposit" currency = "PHP" amount = 100 date = "July 7, 2017" time = "12:36 PM"></transaction>
+  <transaction classification = "withdraw" currency = "PHP" amount = 1000 date = "July 1, 2017" time = "4:32 PM"></transaction>
+
+  </div>
+  <!--<ion-list float-left class="recent-transaction-list">
     <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
       {{ item }}
     </button>
-  </ion-list>
+  </ion-list>-->
+
 </ion-content>
