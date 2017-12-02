@@ -9,11 +9,16 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="transaction-history">
-  <div id="trans-h-container1">
+  <transaction classification = "withdraw" currency = "PHP" amount = 300 date = "July 18, 2017" time = "8:20 PM"></transaction>
+  <transaction classification = "deposit" currency = "PHP" amount = 500 date = "July 16, 2017" time = "7:58 AM"></transaction>
+  <transaction classification = "deposit" currency = "PHP" amount = 250 date = "July 13, 2017" time = "10:04 AM"></transaction>
+  <transaction classification = "deposit" currency = "PHP" amount = 100 date = "July 7, 2017" time = "12:36 PM"></transaction>
+  <transaction classification = "withdraw" currency = "PHP" amount = 1000 date = "July 1, 2017" time = "4:32 PM"></transaction>
+  <!--<div id="trans-h-container1">
     <ion-list>
       <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
         {{ item }}
       </button>
     </ion-list>
-  </div>
+  </div>-->
 </ion-content>
