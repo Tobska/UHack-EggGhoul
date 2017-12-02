@@ -7,7 +7,8 @@ import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
 import { WithdrawDepositPage } from '../pages/withdraw-deposit/withdraw-deposit';
 import { WithdrawPage } from '../pages/withdraw/withdraw';
-
+import { TransactionsPage } from '../pages/transactions/transactions';
+import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
 
 
 @Component({
@@ -33,9 +34,9 @@ export class MyApp {
     this.navCtrl.setRoot(WithdrawDepositPage);
   }goToTransactions(params){
     if (!params) params = {};
-    this.navCtrl.setRoot(WithdrawDepositPage);
+    this.navCtrl.setRoot(TransactionsPage);
   }goToTransactionHistory(params){
     if (!params) params = {};
-    this.navCtrl.setRoot(WithdrawDepositPage);
+    this.navCtrl.setRoot(TransactionHistoryPage);
   }
 }
