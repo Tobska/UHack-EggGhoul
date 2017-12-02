@@ -12,6 +12,26 @@
   <div id="account-d-container1" text-center >
     <h6>X Transaction</h6>
   </div>
-  <h4>Recent Transactions</h4>
-  
+  <h4>Transaction Code</h4>
+  <div id="codeView-markdown2" style="text-align:center;" class="show-list-numbers-and-dots">
+    <p style="color:#3B3A3A;">
+      This code will change in {{ticks}} seconds:
+    </p>
+  </div>
+  <div *ngIf = "!codeVisible">
+    <h2 id="codeView-heading1" style="color:#000000;text-align:center;">
+      XXXX-XXXX-XXXX
+    </h2>
+  </div>
+  <div *ngIf = "codeVisible">
+    <h2 id="codeView-heading1" style="color:#000000;text-align:center;">
+      {{code1}}-{{code2}}-{{code3}}
+    </h2>
+  </div>
+  <div id="codeView-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
+    <p style="color:#757373;">
+      Use this code in a UnionBank ATM or Physical Bank. Your transaction will expire in 1 hour.
+    </p>
+  </div>
+
 </ion-content>

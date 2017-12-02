@@ -1,4 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+import { TransactionDetailPage } from '../../pages/transaction-detail/transaction-detail'
 
 /**
  * Generated class for the TransactionComponent component.
@@ -26,13 +29,14 @@ export class TransactionComponent {
   classification:string;
   code = 0;
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
     /*console.log('Hello TransactionComponent Component');
     this.title = 'Hello World';*/
   }
 
   itemSelected(){
-    console.log("Welcome to your life.")
+    console.log("Welcome to your life.");
+    this.navCtrl.push(TransactionDetailPage);
   }
 
   ngAfterViewInit() {

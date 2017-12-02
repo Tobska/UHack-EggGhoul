@@ -13,6 +13,7 @@ import { TransactionsPage } from '../pages/transactions/transactions';
 import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
 import { AccountsPage } from '../pages/accounts/accounts';
 import { AccountDetailPage } from '../pages/account-detail/account-detail';
+import { TransactionDetailPage } from '../pages/transaction-detail/transaction-detail';
 
 import { TransactionComponent } from '../components/transaction/transaction';
 
@@ -33,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TransactionHistoryPage,
     AccountsPage,
     AccountDetailPage,
-    TransactionComponent
+    TransactionComponent,
+    TransactionDetailPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TransactionsPage,
     TransactionHistoryPage,
     AccountsPage,
-    AccountDetailPage
+    AccountDetailPage,
+    TransactionDetailPage
   ],
   providers: [
     StatusBar,
