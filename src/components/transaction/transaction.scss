@@ -18,6 +18,15 @@ transaction {
 		margin-left: -10px;
 	}
 
+	.current {
+		height: 125%;
+		width: 5px;
+		background-color: #f8951d;
+		position: absolute;
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+
 	#transaction {
 		padding: 5px;
 		margin-bottom: 7px;
