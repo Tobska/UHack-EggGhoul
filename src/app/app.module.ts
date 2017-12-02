@@ -6,7 +6,8 @@ import { WithdrawDepositPage } from '../pages/withdraw-deposit/withdraw-deposit'
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
 import { WithdrawPage } from '../pages/withdraw/withdraw';
-import { DepositPage } from '../pages/desposit/deposit';
+import { DepositPage } from '../pages/deposit/deposit';
+import { PinVerificationPage } from '../pages/pin-verification/pin-verification'
 import { CodeViewPage } from '../pages/code-view/code-view';
 
 
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     CodeViewPage,
     WithdrawPage,
-    DepositPage
+    DepositPage,
+    PinVerificationPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     CodeViewPage,
     WithdrawPage,
-    DepositPage
+    DepositPage,
+    PinVerificationPage
   ],
   providers: [
     StatusBar,

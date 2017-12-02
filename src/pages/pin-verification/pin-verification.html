@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Pin Verification
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="pin-verification">
+  <div id="pin-verification-container1">
+    <h3>Enter your pin: </h3>
+    <ion-item>
+      <ion-input placeholder="Pin Code" type="number"></ion-input>
+    </ion-item>
+    <button ion-button icon-right color="secondary" id="next-btn-pin-v" float-right on-click="goToCodeView()">
+      Next
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button>
+  </div>
+</ion-content>

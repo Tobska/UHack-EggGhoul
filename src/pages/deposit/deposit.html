@@ -10,6 +10,13 @@
 </ion-header>
 <ion-content padding id="deposit">
   <div id="deposit-container1">
-
+    <h3>Enter amount to deposit: </h3>
+    <ion-item>
+      <ion-input placeholder="Amount" type="number"></ion-input>
+    </ion-item>
+    <button ion-button icon-right color="secondary" id="next-btn-deposit" float-right on-click="goToPinVerification()">
+      Next
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button>
   </div>
 </ion-content>
