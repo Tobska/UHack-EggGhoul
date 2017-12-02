@@ -14,6 +14,7 @@ import { TransactionHistoryPage } from '../pages/transaction-history/transaction
 import { AccountsPage } from '../pages/accounts/accounts';
 import { AccountDetailPage } from '../pages/account-detail/account-detail';
 
+import { TransactionComponent } from '../components/transaction/transaction';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TransactionsPage,
     TransactionHistoryPage,
     AccountsPage,
-    AccountDetailPage
+    AccountDetailPage,
+    TransactionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+transaction {
+
+	.withdraw {
+		height: 125%;
+		width: 5px;
+		background-color: red;
+		position: absolute;
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+
+	.deposit {
+		height: 125%;
+		width: 5px;
+		background-color: green;
+		position: absolute;
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+
+	#transaction {
+		padding: 5px;
+		margin-bottom: 7px;
+		-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	}
+
+}
