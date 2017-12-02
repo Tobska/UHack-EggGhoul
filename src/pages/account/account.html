@@ -10,9 +10,17 @@
 </ion-header>
 <ion-content padding id="page2">
   <div id="account-container1">
-    <div id="user-img">
+    <div class="user-img" text-center>
       <img src="../../assets/imgs/logo.png" alt="Cinque-Terre" width="128" height="128">
     </div>
+    <p>Juan De La Cruz</p>
+    <p>Joined: March 2016</p>
+    <h3>Existing Accounts</h3>
+    <ion-list float-left class="accounts-list">
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ item }}
+      </button>
+    </ion-list>
     <button id="withdraw-button" ion-button color="positive" block on-click="goToAccounts()">
       Withdraw
     </button>

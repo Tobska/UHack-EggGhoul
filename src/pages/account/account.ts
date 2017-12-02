@@ -18,4 +18,14 @@ export class AccountPage {
     this.navCtrl.push(AccountsPage);
   }
 
+  items = [
+    'Remmitance Account',
+    'International Account',
+    'Local Account'
+  ];
+
+  itemSelected(item: string) {
+    console.log("Selected Item", item);
+  }
+
 }
