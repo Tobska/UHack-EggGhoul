@@ -7,11 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class CodeViewPage {
 
+	codeVisible:boolean = false;
+
   constructor(public navCtrl: NavController) {
   }
 
   generateCode(){
-    console.log("heh");
+	this.codeVisible = true;
+    console.log("button generate click");
   }
 
   finishTransaction(){

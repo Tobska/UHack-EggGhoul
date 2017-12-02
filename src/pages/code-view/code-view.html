@@ -25,9 +25,16 @@
           This code will change in 60 seconds:
         </p>
       </div>
-      <h2 id="codeView-heading1" style="color:#000000;text-align:center;">
-        2524-3624-2525
-      </h2>
+      <div *ngIf = "!codeVisible">
+        <h2 id="codeView-heading1" style="color:#000000;text-align:center;">
+          XXXX-XXXX-XXXX
+        </h2>
+      </div>
+      <div *ngIf = "codeVisible">
+        <h2 id="codeView-heading1" style="color:#000000;text-align:center;">
+          2524-3624-2525
+        </h2>
+      </div>
       <div id="codeView-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
         <p style="color:#757373;">
           Use this code in a UnionBank ATM or Physical Bank. Your transaction will expire in 1 hour.
