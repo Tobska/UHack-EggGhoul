@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      X Account
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <div id="account-d-container1" text-center >
+    <h6>X Account</h6>
+    <h4>Available Balance</h4>
+    <h3>PHP 0.00</h3>
+  </div>
+  <h4>Recent Transactions</h4>
+
+  <ion-list float-left class="recent-transaction-list">
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item }}
+    </button>
+  </ion-list>
+</ion-content>

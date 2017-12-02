@@ -11,7 +11,8 @@ import { PinVerificationPage } from '../pages/pin-verification/pin-verification'
 import { CodeViewPage } from '../pages/code-view/code-view';
 import { TransactionsPage } from '../pages/transactions/transactions';
 import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
-import { AccountsPage } from '../pages/accounts/accounts'
+import { AccountsPage } from '../pages/accounts/accounts';
+import { AccountDetailPage } from '../pages/account-detail/account-detail';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -29,7 +30,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PinVerificationPage,
     TransactionsPage,
     TransactionHistoryPage,
-    AccountsPage
+    AccountsPage,
+    AccountDetailPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PinVerificationPage,
     TransactionsPage,
     TransactionHistoryPage,
-    AccountsPage
+    AccountsPage,
+    AccountDetailPage
   ],
   providers: [
     StatusBar,
