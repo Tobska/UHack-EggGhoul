@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Platform, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+import { AccountPage } from '../pages/account/account';
+import { LoginPage } from '../pages/login/login';
+
+import { WithdrawDepositPage } from '../pages/withdraw-deposit/withdraw-deposit';
+
+
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  @ViewChild(Nav) navCtrl: Nav;
+    rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -18,5 +25,11 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+  goToAccount(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(AccountPage);
+  }goToWithdrawDeposit(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(WithdrawDepositPage);
+  }
 }
-
