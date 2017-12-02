@@ -6,8 +6,46 @@
   -webkit-appearance: none !important;
 }
 
+.solidifier{
+  opacity: 1 !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.atm-screen{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: url('../../src/assets/imgs/atm-screen.png') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.text-input-container{
+  background-color: black;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.atm-screen-container{
+  padding: 0px 32px 50px 50px;
+  margin:50px;
+  border-radius: 12px;
+  background-color: #f8951d;
+}
+
 .login-form-container{
-  padding: 100px;
+  padding: 1px;
   margin:100px;
   border-radius: 12px;
   background-color: #f8951d;

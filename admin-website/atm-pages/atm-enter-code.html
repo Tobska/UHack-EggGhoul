@@ -8,43 +8,37 @@
   <link rel="stylesheet" href="../site/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
   integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
 </head>
 <body>
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-4 text-center login-form-container ">
-        <h1 style="color:white;">Admin Interface</h1>
+      <div class="col-6 text-center atm-screen-container ">
+        <h1 style="color:white;">2Step ATM</h1>
         <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-12">
-                <form style="padding-bottom:6px;">
-                  <div class="form-group">
-                    <input type="number" class="form-control" id="userCode" placeholder="User Code">
-                  </div>
-                  <a href="#" class="btn btn-primary btn-block admin-login-btn" role="button" type="submit">Verify Code</a>
-                </form>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <a href="../atm-simulator.html" class="btn btn-primary btn-block admin-login-btn" role="button" type="button">ATM Simulation</a>
-                <a href="../index.html" class="btn btn-danger btn-block admin-login-btn" role="button" type="button">Logout</a>
-              </div>
-            </div>
+          <div class="col-12 atm-screen">
+            <div class="row justify-content-center">
+              <div class="col-7 text-input-container">
+                <div class="solidifier">
+                  <form>
+                    <div class="form-group admin-login-form">
+                      <input type="number" class="form-control" id="userInputtedCode" placeholder="Enter Code">
+                    </div>
 
+                    <a href="#" class="btn btn-primary btn-block admin-login-btn" role="button" type="submit">Confirm</a>
+                  </form>
+                </div>
 
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
 </html>
