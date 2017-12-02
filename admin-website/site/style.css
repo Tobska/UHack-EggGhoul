@@ -1,0 +1,14 @@
+.admin-login-form{
+  text-align: left;
+}
+
+.admin-login-btn{
+  -webkit-appearance: none !important;
+}
+
+.login-form-container{
+  padding: 100px;
+  margin:100px;
+  border-radius: 12px;
+  background-color: #f8951d;
+}
